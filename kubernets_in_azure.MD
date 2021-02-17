@@ -1,7 +1,8 @@
-### Install Local Virtual Machine with Vagrant
+## Install Local Virtual Machine with Vagrant
 
-## Vagrant file content
+### Vagrant file content
 
+```
 Vagrant.configure("2") do |config|
   
   config.vm.define "kubeclientazure" do |kubeclient|
@@ -17,12 +18,12 @@ Vagrant.configure("2") do |config|
     end
   end
 end
+```
 
-
-## Start the Virtual machine
+### Start the Virtual machine
 vagrant up
 
-## Connect to the server
+### Connect to the server
 vagrant ssh kubeclientazure
 
 
